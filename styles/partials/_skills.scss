@@ -1,0 +1,35 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // justify-items: center;
+    // align-content: center;
+    align-items: center;
+    padding: 20px;
+    background: $primaryColor;
+}
+
+.skills h2 {
+    text-align: center;
+    @include fontSize(40);  
+    color: white;
+}
+
+
+
+.fab, 
+.far {
+    @include fontSize(90); 
+    // padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+
+.skills img {
+    margin: 0 auto;
+    height: 90px;
+    // display: inline;
+    padding-top: 10px;
+    // padding: 10px;
+}

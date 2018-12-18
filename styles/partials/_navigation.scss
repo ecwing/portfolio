@@ -1,0 +1,113 @@
+.backdrop {
+  background: url("/../assets/skyline.jpg") center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.text {
+  color: white;
+  background: rgba(0,0, 0, 0.75);
+  mix-blend-mode: multiply;
+  height: 100vh;
+  text-align: center;
+  transition: text-indent .5s;
+}
+
+header {
+    height: 100%;
+    min-height: 705px;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: end;
+    justify-content: space-between;
+    padding: 1rem 0;
+    padding: 0 25px;
+    font-size: 3rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 150;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: capitalize;
+}
+
+li {
+    text-transform: capitalize;    
+}
+
+.nav__logo img {
+    margin:30px 0 20px 0;
+    height: 55px;
+    padding: 0 3px 0 3px;
+    background: $accent-color;
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hamburgerNav_list {
+    background: $primaryColor;
+    padding: 5px;
+}
+
+
+.fa-times, .fa-bars {
+    display: none;
+}
+
+nav .fas.show-icon {
+    display: block;
+}
+
+
+header .toggle__nav {
+    text-align: right;
+    width: 100%;
+    padding: 8px;
+}
+
+.fas {
+    font-size: 30px;
+    transition: .15s ease-in;
+}
+
+.fas:hover {
+    cursor: pointer;
+} 
+    #toggle__nav:checked ~ li {
+        display: none;
+    }
+    
+    #toggle__nav {
+      display: none;
+    }
+    header .hamburgerNav_list .toggle__nav:hover {
+    color: green;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    padding: 0;
+}
+
+.hamburgerNav__item {
+    margin: 1.5rem;
+
+}

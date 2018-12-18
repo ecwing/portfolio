@@ -1,0 +1,39 @@
+$primaryColor: seagreen; //oragney yellow
+$accent-color:rgb(180,125,100); // Accent or Button Color
+$background-color: #f0efed; //white shade
+
+
+$black-color: #2c2c2c; //Black color
+
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Lora', serif;
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+.wrapper {
+    max-width: 1280px;
+    padding: 0 25px;
+}
+
+@mixin fontSize($size-value) {
+    font-size: $size-value * 1px;
+    font-size: ($size-value / 10) * 1rem;
+}
+
+@mixin primaryFont($size){
+    font-family: $main-font;
+    color: $primaryColor;
+}
+
+@mixin secondaryFont($size) {
+    font-family: $secondary-font;
+    color: $black-color;
+}
+
+@mixin primaryColor {
+    color: $primaryColor;    
+}

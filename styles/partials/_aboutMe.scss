@@ -1,0 +1,50 @@
+#about h2 {
+    text-align: center;
+}
+
+#about {
+    display: flex;
+    height: 100vh;
+    background: #fff;
+    & .autoScrollDown a {
+        text-decoration: none;
+        color: green;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.aboutMe {
+    display: flex;
+    // justify-content: space-between;
+
+    align-items: center;
+    color: black;
+    padding: 30px 25px 25px 25px;
+
+    &__text {
+        background: rgba(46,139,87,0.85);
+        padding: 20px 20px;
+        color: #fff;
+    }
+    & img {
+        max-width: 100%;
+
+    }
+    & p {
+        @include fontSize(20);
+    }
+
+    &__text p a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+.contentTest {
+    height: 900px;
+}
+
+
+// Thanks Em
