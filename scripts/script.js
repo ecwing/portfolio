@@ -19,9 +19,9 @@
 
 $(document).ready(function () {
 
-
+    // TYPED.JS
     var typed = new Typed('.typed', {
-        strings: ["Front-End Web Developer.", "'Turonno' Native.", "Tech Enthusiast."],
+        strings: ["Front-End Web Developer.", "'Turonno' Native.", "Tech Enthusiast.", "Full-Snack Dev 🍩🍿🍫"],
         // typing speed
         typeSpeed: 30,
         // time before typing starts
@@ -40,8 +40,19 @@ $(document).ready(function () {
         cursorChar: "|",
         // attribute to type (null == text)
         attr: null
-
     });
+
+    //show Wing home logo after header
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 623) {
+            $('.nav__logo').fadeIn();
+        } else {
+            $('.nav__logo').fadeOut();
+        }
+    });
+
+
 });
 
 

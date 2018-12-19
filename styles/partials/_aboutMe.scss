@@ -1,34 +1,31 @@
-#about h2 {
-    text-align: center;
-}
 
 #about {
-    display: flex;
-    height: 100vh;
-    background: #fff;
+    h2 {
+        text-align: center;
+    }
     & .autoScrollDown a {
         text-decoration: none;
         color: green;
         margin: 0 auto;
-        text-align: center;
+        display: flex;
+        justify-content: space-around;
     }
 }
 
 .aboutMe {
     display: flex;
-    // justify-content: space-between;
-
     align-items: center;
-    color: black;
     padding: 30px 25px 25px 25px;
-
     &__text {
-        background: rgba(46,139,87,0.85);
+        background: #fff;
+        border: solid 5px orange;
         padding: 20px 20px;
-        color: #fff;
+        margin-right: 10px;
+        color: black;
     }
     & img {
-        max-width: 100%;
+        width: 100%;
+        max-width: 430px;
 
     }
     & p {
@@ -37,7 +34,10 @@
 
     &__text p a {
         text-decoration: none;
-        color: white;
+        color: green;
+        &:hover {
+            color:orange;
+        }
     }
 }
 

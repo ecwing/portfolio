@@ -11,6 +11,7 @@
   color: white;
   background: rgba(0,0, 0, 0.75);
   mix-blend-mode: multiply;
+  margin: auto;
   height: 100vh;
   text-align: center;
   transition: text-indent .5s;
@@ -18,7 +19,7 @@
 
 header {
     height: 100%;
-    min-height: 705px;
+    min-height: 650px;
     position: relative;
     top: 0;
     right: 0;
@@ -28,36 +29,45 @@ header {
 
 .nav {
     display: flex;
+    @include fontSize(40);
     flex-direction: end;
     justify-content: space-between;
     padding: 1rem 0;
     padding: 0 25px;
-    font-size: 3rem;
     position: fixed;
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 150;
+    z-index: 99;
     color: white;
+    
+    &__logo img {
+        margin:40px 0 20px 0;
+        height: 55px;
+        padding: 0 3px 0 3px;
+        background: orange;
+        transition: 0.15s ease-in;
+        &:hover {
+            background: $primaryColor;
+        }
+    }
+    
+    &__logo {
+        display:none;
+        // position: fixed;
+    }
+    & a {
+        text-decoration: none;
+        color: inherit;
+        text-transform: capitalize;
+    }
 }
 
-nav a {
-    text-decoration: none;
-    color: inherit;
-    text-transform: capitalize;
-}
 
 li {
     text-transform: capitalize;    
 }
 
-.nav__logo img {
-    margin:30px 0 20px 0;
-    height: 55px;
-    padding: 0 3px 0 3px;
-    background: $accent-color;
-    display: none;
-}
 
 ul {
     list-style-type: none;
@@ -69,9 +79,9 @@ ul {
 }
 
 
-.fa-times, .fa-bars {
-    display: none;
-}
+// .fa-times, .fa-bars {
+//     display: none;
+// }
 
 nav .fas.show-icon {
     display: block;
@@ -100,7 +110,7 @@ header .toggle__nav {
       display: none;
     }
     header .hamburgerNav_list .toggle__nav:hover {
-    color: green;
+    color: orange;
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -109,5 +119,8 @@ input[type="checkbox"], input[type="radio"] {
 
 .hamburgerNav__item {
     margin: 1.5rem;
+  &:hover {
+      color: orange;
+  }  
 
 }

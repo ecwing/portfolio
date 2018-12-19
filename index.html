@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- FAVICON -->
-    <link type="image/png" href="assets/abc.png" rel="icon">
+    <link type="image/png" href="assets/wing.svg" rel="icon">
     <!-- EXTERNAL STYLING -->
     <link rel="stylesheet" href="styles/styles.css">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,700" rel="stylesheet">
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- DEV ICONS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!-- ANIMATE LIBRARY -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <title>Eric Wing</title>
@@ -21,12 +22,10 @@
 <body>
     <!-- SKIP TO MAIN CONTENT LINK -- -->
     <a href="#maincontent" class="skip-link">Skip to main content.</a>
-
-    <!-- TOP NAVIGATION MENU SECTION BEGINS -->
-
+    
     <!-- HEADER CONTENT BEGINS -->
-    <header class="backdrop">
-      
+    <header class="backdrop">    
+      <!-- TOP NAVIGATION MENU SECTION BEGINS -->
       <nav class="nav wrapper">
         <a class="nav__logo" href="#">
             <img src="assets/wing.svg" alt="wing logo">
@@ -35,7 +34,7 @@
           <ul class="hamburgerNav_list">
             <label for="toggle__nav">
               <div class="menuToggle">
-                <i class="toggle__nav fas fa-times show-icon"></i>
+                <!-- <i class="toggle__nav fas fa-times show-icon"></i> -->
                 <i class="toggle__nav fas fa-bars"></i>
               </div>
             </label>
@@ -48,76 +47,54 @@
           </ul>
         </nav>
 
-
       <div class="text wrapper">
             <div class="heroMain">
                 <div class="wrapper">
                     <h1 id="maincontent">ERIC WING</h1>
-                    <!-- implement typed.js HERE! -->
-                    <h2>I am a <span class="typed"></span></h2>
-                    <a href="#about"><i class="autoScrollDown fas fa-angle-down animated infinite heartBeat"></i></a> 
+                    <h2>I am a 
+                      <span class="typed"></span>
+                    </h2>
+                    <!-- <a href="#about"><i class="autoScrollDown fas fa-angle-down animated infinite heartBeat"></i></a>  -->
                 </div>
             </div>
       </div>
     </header>
     <!-- HEADER CONTENT ENDS -->
 
-
-
-
-
-
-
-
     <!-- MAIN CONTENT BEGINS -->
     <main>
-        <!-- ABOUT ME SECTION -->
+        <!-- ABOUT ME SECTION BEGINS-->
         <section id="about">
           <div class="aboutMe">
-            <img src="assets/profilePic.jpg" alt="HackerYou headshot of Eric Wing with an artsy filtered applied">
             <div class="aboutMe__text wrapper">
               <h2>About Me</h2>
-              <p><strong>Hello! My name is Eric and I am a web developer from Toronto.</strong></p>
-              <p>I've channelled a life-long creative itch after a winding career path into developing fun, rich web applications while keeping resonsive web design and acessibilty in mind.</p>
-              <p>Some quirks & fun facts - I love sharing 🎵<a href="https://open.spotify.com/track/4oajZgImAgSECrFQGLZwQu?si=PTKGzyaiRUea3VFUbCSWYg">music</a>🎵, playing boardgames 🎲, or dwelling on existential thoughts like space 🚀 and time ⌛️</p>
+              <p><strong>I am a front-end web developer based in Toronto.</strong></p>
+              <p>I've channelled a life-long creative itch after a winding career path into developing fun, rich web applications while keeping responsive web design and acessibilty in mind.</p>
+              <p>Some fun facts and hobbies - I love sharing <a target="_blank" href="https://open.spotify.com/track/4oajZgImAgSECrFQGLZwQu?si=PTKGzyaiRUea3VFUbCSWYg"><strong>music</strong></a> 🎵, playing boardgames 🎲, listening to podcasts 🎧, and dwelling on existential thoughts like space 🚀 and time ⌛️</p>
             </div>
+            <img src="assets/eric.png" alt="HackerYou headshot of Eric Wing with an artsy filtered applied">    
+          </div>
+          <div class="autoScrollDown">
             <a href="#portfolio"><i class="autoScrollDown fas fa-angle-down animated heartBeat"></i></a>
-
           </div>
         </section>
+        <!-- ABOUT ME SECTION ENDS-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- my skills -->
-        <!-- //try and implement CSS grids here! -->
+        <!-- SKILLS SECTION BEGINS -->
         <section id="skills">
             <div class="skills">
-                <h2>MY SKILLS</h2>
+                <div>
+                  <h2>MY SKILLS</h2>
+                </div>
                 <div>
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-css3-alt"></i>
                     <i class="fab fa-js-square"></i>
                     <i class="fab fa-sass"></i>
-                    <img src="assets/jquery.png" alt="jquery icon">
+                    <i class="devicon-jquery-plain-wordmark"></i>
                 </div>
                 <div>
-                    <i class="fas fa-code-branch"></i>
+                    <i class="fab fa-github"></i>
                     <i class="fab fa-node-js"></i>
                     <i class="fab fa-react"></i>
                     <i class="far fa-window-restore"></i>
@@ -125,41 +102,50 @@
                 </div>
             </div>
         </section>
+        <!-- SKILLS SECTION ENDS -->
 
-        <!-- PORTFOLIO SECTION -->
+        <!-- PORTFOLIO SECTION BEGINS -->
         <section id="portfolio">
           <div class="work wrapper">
             <h2>My Work</h2>
             <div class="work__project">
-              <img src="assets/garbageSort.png" alt="laptop with screen of the Garbage Sorter Project">
+              <img src="assets/garbageSort2.png" alt="laptop with screen of the Garbage Sorter Project">
               <div class="work__project--text">
                 <h3>Garbage Sorter</h3>
-                <p>A mock client project using the City Of Toronto's API to help a user identify what item goes in which collection bin.</p>
-                <p>HTML5 CSS3 JavaScript React Rest API</p>
+                <p>A mock client project using the City Of Toronto's API to help a user identify what waste item goes in which collection bin.</p>
+                <p>React | JavaScript | Rest API | CSS3 | Group Project</p>
+                <a target="_blank" href="https://garbagesorter-hy.firebaseapp.com/">VIEW LIVE</a>
+                <a target="_blank" href="https://github.com/GarbageSorter/project6">VIEW ON GITHUB</a>
               </div>
             </div>
             <div class="work__project">
-              <img src="assets/BujoToGo.png" alt="laptop with screen of the Bujo To Go Project">
+              <img src="assets/bujo2.png" alt="laptop with screen of the Bujo To Go Project">
               <div class="work__project--text">
                 <h3>Bujo to Go!</h3>
                 <p>A web app that models the Bullet Journal method in digital form</p>
-                <p>HTML5 CSS3 JavaScript React Rest API</p>
+                <p> JavaScript | React | Rest API | CSS </p>
+                <a target="_blank" href="https://project-5-bujo.firebaseapp.com/">VIEW LIVE</a>
+                <a target="_blank" href="https://github.com/GarbageSorter/project5">VIEW ON GITHUB</a>
               </div>
             </div>
             <div class="work__project">
-              <img src="assets/sophie.png" alt="laptop with screen of the Sohpie Project">
+              <img src="assets/sophie2.png" alt="laptop with screen of the Sohpie Project">
               <div class="work__project--text">
                 <h3>Sophie</h3>
                 <p>A multi-page PSD conversion</p>
-                <p>HTML5 CSS3 SASS</p>
+                <p>HTML5 | CSS3 | SASS</p>
+                <a target="_blank" href="#">VIEW LIVE</a>
+                <a target="_blank" ="https://github.com/ecwing/eric_wing_project2">VIEW ON GITHUB</a>
               </div>
             </div>
             <div class="work__project">
-              <img src="assets/jalapeno.png" alt="laptop with screen of the J For Jalapeño Project">
+              <img src="assets/jalapeno2.png" alt="laptop with screen of the J For Jalapeño Project">
               <div class="work__project--text">
                 <h3>J For Jalapeño</h3>
                 <p>An application to teach the alphabet to your kids in the most challenging way! Prepare yourself for the questions!</p>
-                <p>HTML5 CSS3 SASS JavaScript</p>
+                <p>JavaScript | HTML5 | CSS3 | SASS </p>
+                <a target="_blank" href="http://ericwing.ca/p-for-pneumonia/">VIEW LIVE</a>
+                <a target="_blank" href="https://github.com/ecwing/eric_wing_project3">VIEW ON GITHUB</a>
               </div>
             </div>
           </div>
@@ -168,19 +154,32 @@
 
         <!-- contact me section -->
         <section id="contact">
+          <div class="contact">
+            <h3>I Would Love to Connect!</h3>
+            <a href="https://www.linkedin.com/in/wingeric/" target=“_blank”>
+              <i class="fab fa-linkedin-in" title="Add me on LinkedIn!"></i>
+            </a>
+            <a href="https://twitter.com/Eric_Wing" target=“_blank”>
+              <i class="fab fa-twitter" title="Follow me on Twitter!"></i>
+            </a>
+            <a href="https://github.com/ecwing" target=“_blank>
+              <i class="fab fa-github"></i>
+            </a>
 
-          contact me here!
+            <a href="mailto:ericcwing@gmail.com" title="Send an email to Eric">
+              <p class="email_link">✉️ ericcwing@gmail.com</p>
+            </a>
+            <div class="footText">
+              <p>Designed with 💚 by me! &copy; 2018</p>
+            </div>
+          </div>
 
-          <a href="mailto:ericcwing@gmail.com" title="Send an email to Eric">
-            <p class="email_link">ericcwing@gmail.com</p>
-          </a>
 
         </section>
 
     </main>    
     
     <footer class="footer">
-        <p>Made with 💚 by Eric Wing &copy; 2018</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>

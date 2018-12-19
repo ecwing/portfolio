@@ -14,15 +14,16 @@
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    @include fontSize(300);
+    @include fontSize(330);
     margin: 0 auto;
     padding-top: 30px;
     line-height: 80%;
 }
 
 h2 {
-    @include fontSize(30);
+    @include fontSize(40);
     margin-bottom: 10px;
+    margin-top: 15px;
 }
 
  .wrapper a {
@@ -45,12 +46,6 @@ h2 {
 	animation: blink 0.7s infinite;
 }
 
-/*Removes cursor that comes with typed.js*/
-// .typed-cursor{
-//    opacity: 0;
-// 	display: none;
-// }
-/*Custom cursor animation*/
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
