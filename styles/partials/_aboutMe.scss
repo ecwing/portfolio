@@ -9,18 +9,23 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        transition: .2s ease-in;
+        &:hover {
+            color: orange;
+        }
     }
 }
 
 .aboutMe {
     display: flex;
     align-items: center;
-    padding: 30px 25px 25px 25px;
+    padding: 0px 55px 0px 55px;
+    
     &__text {
         background: #fff;
         border: solid 5px orange;
         padding: 20px 20px;
-        margin-right: 10px;
+        margin-right: 40px;
         color: black;
     }
     & img {
@@ -41,10 +46,23 @@
     }
 }
 
+     .fa-angle-down {
+         margin-top: 0;
+         padding-top: 0;
+        @include fontSize(70);
+    }
 
-.contentTest {
-    height: 900px;
+@media only screen and (max-width: 945px) {
+    .aboutMe p {
+        @include fontSize(15);
+    }
 }
 
-
-// Thanks Em
+@media only screen and (max-width: 745px) {
+    .aboutMe {
+        flex-direction: column-reverse;
+        &__text {
+            margin-right: 0px;
+        }
+    }
+}
