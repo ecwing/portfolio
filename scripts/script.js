@@ -33,7 +33,7 @@ $(document).ready(function () {
         // loop
         loop: true,
         // false = infinite
-        loopCount: 20,
+        loopCount: 2000,
         // show cursor
         showCursor: false,
         // character for cursor
