@@ -9,12 +9,21 @@
     display: flex;
     justify-self: center;
     align-items: center;
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
 }
+
+
 
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    @include fontSize(330);
+    @include fontSize(430);
     margin: 0 auto;
     padding-top: 30px;
     line-height: 78%;
